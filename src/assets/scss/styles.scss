@@ -2,8 +2,9 @@
 // FileLocaltion: cd d:github/asaangular .1 //
 // sass --watch src/assets/scss/styles.scss src/styles.css .2 //
 
-$cyn: cyan;
+@import "variables";
+@import "mixins";
  
 body {
-	background: $cyn;
+	@include qoraF;
 }
