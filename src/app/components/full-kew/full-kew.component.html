@@ -1,26 +1,25 @@
-	<article class="container bg-white shadow-lg radius p-3 mb-3">
-
-<h2>{{ ChartName }}</h2>
-
-<ul>
-	<li>MicroSxema: {{ MicroSxema }}</li>
-	<li>Rezistor: {{ OM }}om</li>
-	<li>Kondesator: {{ Kondesator }}f</li>
-	<li>uzgaruvchan: {{ kondesatorlar.uzgaruvchan }}</li>
-	<li>uzgarmas: {{ kondesatorlar.uzgarmas }}</li>
-	<li>Rang: {{ Colors.car }}</li>
-	<li>Rang: {{ Colors.salon }}</li>
-	<li>Rang: {{ Colors.wheels }}</li>
-</ul>
-
-<!-- Inline: {{ options }} -->
-<h3>other title</h3>
-<ol>
-	<li *ngFor="let opt of options">{{ opt }}</li>
-</ol>
-
-<h3>Select Charts...</h3>
-<button class="btn btn-outline-danger" (click)="ChartSelect('TDA30')">TDA 2030</button>
-<button class="btn btn-outline-success" (click)="ChartSelect('TDA3')">TDA 2003</button>
-<button class="btn btn-outline-primary" (click)="ChartSelect('TDA60')">TDA 2060</button>
-	</article>
+<article class="container bg-white shadow-lg radius p-3 mb-3">
+	<h2>{{ ChartName }}</h2>
+	
+	<ul>
+		<li>MicroSxema: {{ MicroSxema }}</li>
+		<li>Rezistor: {{ OM }}om</li>
+		<li>Kondesator: {{ Kondesator }}f</li>
+		<li>uzgaruvchan: {{ kondesatorlar.uzgaruvchan }}</li>
+		<li>uzgarmas: {{ kondesatorlar.uzgarmas }}</li>
+		<li>Rang: {{ Colors.car }}</li>
+		<li>Rang: {{ Colors.salon }}</li>
+		<li>Rang: {{ Colors.wheels }}</li>
+	</ul>
+	
+	<!-- Inline: {{ options }} -->
+	<h3>other title</h3>
+	<ol>
+		<li *ngFor="let opt of options">{{ opt }}</li>
+	</ol>
+	
+	<h3>Select Charts...</h3>
+	<button class="btn btn-outline-danger" (click)="ChartSelect('TDA30')">TDA 2030</button>
+	<button class="btn btn-outline-success" (click)="ChartSelect('TDA3')">TDA 2003</button>
+	<button class="btn btn-outline-primary" (click)="ChartSelect('TDA60')">TDA 2060</button>
+</article>
