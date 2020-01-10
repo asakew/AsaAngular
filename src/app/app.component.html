@@ -1,9 +1,11 @@
 <header class="conteiner mb-3">
 		<h1 class="text-center">{{ SiteTitle }}</h1>
+		<a routerLinl="/">bosh sahifa</a>
+		<a routerLinl="/aloqa">aloqa</a>
 </header>
 
-<main role="main">
-	<article class="container bg-white shadow-lg radius p-3 mb-3">
-	  <app-full-kew></app-full-kew>
-	</article>
-</main>
+
+<router-outlet></router-outlet>
+
+
+<footer>footer</footer>
