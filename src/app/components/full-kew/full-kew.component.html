@@ -1,1 +1,23 @@
-<p>full-kew works!</p>
+<h2>{{ ChartName }}</h2>
+
+<ul>
+	<li>MicroSxema: {{ MicroSxema }}</li>
+	<li>Rezistor: {{ OM }}om</li>
+	<li>Kondesator: {{ Kondesator }}f</li>
+	<li>uzgaruvchan: {{ kondesatorlar.uzgaruvchan }}</li>
+	<li>uzgarmas: {{ kondesatorlar.uzgarmas }}</li>
+	<li>Rang: {{ Colors.car }}</li>
+	<li>Rang: {{ Colors.salon }}</li>
+	<li>Rang: {{ Colors.wheels }}</li>
+</ul>
+
+<!-- Inline: {{ options }} -->
+<h3>other title</h3>
+<ol>
+	<li *ngFor="let opt of options">{{ opt }}</li>
+</ol>
+
+<h3>Select Charts...</h3>
+<button class="btn btn-outline-success" (click)="TDA5Select()">TDA 2005</button>
+<button class="btn btn-outline-danger" (click)="TDA40Select()">TDA 2040</button>
+<button class="btn btn-outline-primary" (click)="TDA90Select()">TDA 2090</button>
