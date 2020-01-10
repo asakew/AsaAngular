@@ -19,8 +19,8 @@ export class FullKewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  	this.ChartName = 'kew title chart...';
-  	this.MicroSxema = 'TDA - 2003';
+  	this.ChartName = 'MicroSxema: TDA2003';
+  	this.MicroSxema = 'TDA2003';
   	this.OM = 500;
   	this.Kondesator = 0.50;
   	this.kondesatorlar = {
@@ -35,6 +35,54 @@ export class FullKewComponent implements OnInit {
   	this.options = ['ABS', 'AutoPilot'];
   }
 
+  ChartSelect (CName) {
+  	if (CName == 'TDA30') {
+  		this.ChartName = 'MicroSxema: TDA2030';
+  		this.MicroSxema = 'TDA2030';
+  		this.OM = 500;
+  		this.Kondesator = 0.50;
+  		this.kondesatorlar = {
+  			uzgarmas: '330 om',
+				uzgaruvchan: '100 om'
+  		};
+  		this.Colors = {
+  			car: 'white',
+  			salon: 'black',
+  			wheels: 'silver'
+  		};
+  		this.options = ['ABS', 'AutoPilot'];
+  	} else if (CName == 'TDA3') {
+  			this.ChartName = 'MicroSxema: TDA2003';
+  			this.MicroSxema = 'TDA2003';
+  			this.OM = 495;
+  			this.Kondesator = 0.50;
+  			this.kondesatorlar = {
+  				uzgarmas: '335 om',
+					uzgaruvchan: '100 om'
+  			};
+  			this.Colors = {
+  				car: 'white',
+  				salon: 'black',
+  				wheels: 'silver'
+  			};
+  			this.options = ['ABS', 'AutoPilot'];  		
+  	} else {
+  			this.ChartName = 'MicroSxema: TDA2060';
+  			this.MicroSxema = 'TDA2060';
+  			this.OM = 505;
+  			this.Kondesator = 0.50;
+  			this.kondesatorlar = {
+  				uzgarmas: '325 om',
+					uzgaruvchan: '100 om'
+  			};
+  			this.Colors = {
+  				car: 'white',
+  				salon: 'black',
+  				wheels: 'silver'
+  			};
+  			this.options = ['ABS', 'AutoPilot'];    		
+  	}
+  }
 }
 
 interface colors {
